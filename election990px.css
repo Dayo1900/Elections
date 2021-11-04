@@ -1,0 +1,29 @@
+* { font-family: Garamond sans-serif;}
+
+body{ background-color:#fff2e6;
+      width:100vw; }
+
+h2 { margin-bottom:2rem; margin-top:2rem; 
+     font-size:2em; text-align:center;
+     text-shadow:3px 1px 1px 5px #999999;
+ }
+
+.a { width:65%; 
+     height:auto;
+     padding:2em;
+     display:block; 
+     margin:2rem auto; 
+     box-sizing:content-box;
+     box-shadow:1px 1px 1px 1px #999999;
+     background-color:white;
+}
+
+label { font-size:1.2rem; margin-bottom: 1.5em;
+    margin-right: 0.7em;
+}
+
+button[type="submit"]
+{
+    padding:0.6em;
+    text-align:center;
+}
