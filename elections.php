@@ -7,9 +7,6 @@
 <meta name="keywords" content="2011 elections">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="election.css">
-<link rel="stylesheet" type="text/css" media="(max-width:990px)" href="election990px.css">
-<link rel="stylesheet" type="text/css" media="(max-width:660px)" href="election660px.css">
-<link rel="stylesheet" type="text/css" media="(max-width:330px)" href="election330px.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -44,7 +41,8 @@ include 'server_showpollingunit.php';
 <h2> Election Results</h2>
 </header>
 
-<p style="font-size:0.9em; font-family:verdana, sans-serif; text-align:center;">During an election at Delta state, some polling units were selected and their data stored in a database.<br>This page queries the database and displays the election results according to polling unit. The code can be found <a href="#" style="font-size:0.9em; font-family:verdana, sans-serif;">on this link.</a> </p>
+<p style="font-size:0.9em; font-family:verdana, sans-serif; text-align:center;">I took my sample data from an election held at Delta state, Nigeria back in 2011. 
+I selected some polling units and stored the information in a database.<br>This page queries the database and displays the election results according to polling unit. The code can be found <a href="https://github.com/Dayo1900/Elections.git" style="font-size:0.9em; font-family:verdana, sans-serif;">on this link.</a> </p>
 <div class="a">
 <form action="elections.php" method="post">
 
@@ -74,8 +72,17 @@ include 'server_showpollingunit.php';
 <button type="submit" name="show_partyresult"> Show party results</button>
 </form>
 
-<br><br><br>
+<br>
+<?php
+if(isset ($_POST['show_partyresult']))
+{
+echo "<h6 style='font-family:verdana, sans-serif; font-size:1.05rem;'>Polling Unit: ". $polling_unit ."</h6>";
+}
+?>
+
 <label> <u> Registered Parties </u></label><br>
+
+
 
 <label for="JP">JP:</label>
 <span>
