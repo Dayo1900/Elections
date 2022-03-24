@@ -1,9 +1,9 @@
 <?php
 
-$servername="localhost";
-$username="id17048003_gahs";
-$password="Temitope.1900";
-$databasename="id17048003_customer";
+$servername="****";
+$username="******";
+$password="*****";
+$databasename="*******";
 
 
 $connect=mysqli_connect($servername, $username, $password, $databasename);
